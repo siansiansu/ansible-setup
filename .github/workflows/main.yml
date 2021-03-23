@@ -9,8 +9,8 @@ jobs:
   jobs:
     strategy:
       matrix:
-        os: ['ubuntu-latest', 'windows-latest', 'macos-latest']
-        containers: [1, 2]
+        os: ['ubuntu-latest', 'macos-latest']
+        containers: [1]
     runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v2
