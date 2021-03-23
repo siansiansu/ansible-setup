@@ -1,9 +1,4 @@
 ---
 - hosts: defaults
-  gather_facts: no
   tasks:
-    - name: Install Htop
-      become: yes
-      apt:
-        name: htop
-        state: present
+    - include: './roles/tasks/main.yaml'

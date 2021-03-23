@@ -1,0 +1,5 @@
+---
+- name: Install the latest version of Htop
+  yum:
+    name: htop
+    state: latest

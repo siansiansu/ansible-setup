@@ -1,0 +1,9 @@
+---
+- include_tasks: roles/tasks/setup-RedHat.yaml
+  when: ansible_os_family == 'RedHat'
+
+- include_tasks: roles/tasks/setup-Debian.yaml
+  when: ansible_os_family == 'Debian'
+
+- include_tasks: roles/tasks/setup-Darwin.yaml
+  when: ansible_os_family == 'Darwin'
