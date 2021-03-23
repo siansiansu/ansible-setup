@@ -1,0 +1,15 @@
+name: Ansible Install
+
+on:
+  workflow_dispatch: 
+  repository_dispatch:
+
+jobs:
+  jobs1:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Echo Today
+      run: |
+        pip install ansible;
+        make run
