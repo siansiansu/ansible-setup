@@ -1,5 +1,6 @@
 ---
 - name: Install Htop
+  become: yes
   apt:
     name: htop
     state: latest

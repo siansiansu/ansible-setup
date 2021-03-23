@@ -1,5 +1,6 @@
 ---
 - community.general.homebrew:
+    become: yes
     name: htop
     state: present
     update_homebrew: yes
